@@ -14,6 +14,23 @@ while (task1Status !== "todo" && task1Status !== "doing" && task1Status !== "don
 }
 console.log(`Status: ${task1Status}`);
 
+switch (task1Status) {
+    case "todo":
+        console.log(`Title: ${task1Title}, status: ${task1Status}`);
+        break;
+    
+    case "doing":
+        console.log(`Title: ${task1Title}, status: ${task1Status}`);
+        break;
+
+    case "done":
+        console.log(`Title: ${task1Title}, status: ${task1Status}`);
+        break;
+
+    default: 
+        console.log("no tasks completed, let's get to work!")
+}
+
 //Task 2
 let task2Title = prompt("Enter task 2 title");
 console.log(`Title: ${task2Title}`);
@@ -29,3 +46,20 @@ while(task2Status !== "todo" && task2Status !== "doing" && task2Status !== "done
     task2Status = prompt("Enter task 1 status (todo, doing, done)");
 }
 console.log(`Status: ${task2Status}`);
+
+switch (task2Status) {
+    case "todo":
+        console.log(`Title: ${task2Title}, status: ${task2Status}`);
+        break;
+
+    case "doing":
+        console.log(`Title: ${task2Title}, status: ${task2Status}`);
+        break;
+
+    case "done":
+        console.log(`Title: ${task2Title}, status: ${task2Status}`);
+        break;
+
+    default: 
+        console.log("no tasks completed, lets get to work buddy!")
+}
