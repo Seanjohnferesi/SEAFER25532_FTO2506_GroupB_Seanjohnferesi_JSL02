@@ -30,17 +30,44 @@ The application features multiple task columns, styled task cards, and a static 
 
 ---
 
-## 🛠️ Tech Stack
+## 2. JavaScript Task Entry System
 
-- **HTML**  
-- **CSS**   
+A JavaScript-based system that allows users to input two tasks with full details while ensuring data validation and consistency.
+
+### Features
+- Prompt users to enter **title**, **description**, and **status** for two tasks
+- Automatically converts status input to **lowercase**
+- Validates status to accept only `todo`, `doing`, or `done`, prompting repeatedly until valid
+- Displays **completed tasks** (status: `done`) in the console
+- Shows a motivational message if no tasks are completed:  
+  `"No tasks completed, let's get to work!"`  
 
 ---
 
-## 📸 Preview
+## 🛠️ Tech Stack
+
+- **HTML**  
+- **CSS** 
+- **JavaScript**  
+
+---
+
+## 📸 Kanban Board Preview
 
 ### Desktop View
 ![Desktop Preview](./assets/desktop.png)
 
 ### Mobile View
 ![Mobile Preview](./assets/mobile.png)
+
+## 📷 Javascript task entry system preview  
+
+### User Input View  
+![User Input](./assets/user-input.png)
+
+### Invalid Status  
+![Invalid Status](./assets/invalid-input-error.png)
+
+### Console Log Output  
+![Console Log Output](./assets/output.png)
+
