@@ -1,20 +1,31 @@
 //Task 1
-const task1Title = prompt("Enter task 1 title");
+let task1Title = prompt("Enter task 1 title");
 console.log(`Title: ${task1Title}`);
 
-const task1Description = prompt("Enter task 1 description");
+let task1Description = prompt("Enter task 1 description");
 console.log(`Description: ${task1Description}`);
 
-const task1Status = prompt("Enter task 1 status");
+let task1Status = prompt("Enter task 1 status (todo, doing, done)");
+
+//invalid input for task 1
+while (task1Status !== "todo" && task1Status !== "doing" && task1Status !== "done") {
+    alert("Invalid status. Please enter 'todo', 'doing', or 'done'.");
+    task1Status = prompt("Enter task 1 status (todo, doing, done)");
+}
 console.log(`Status: ${task1Status}`);
 
 //Task 2
-const task2Title = prompt("Enter task 2 title");
-console.log(`Title: ${task1Title}`);
+let task2Title = prompt("Enter task 2 title");
+console.log(`Title: ${task2Title}`);
 
-const task2Description = prompt("Enter task 2 description");
-console.log(`Description: ${task1Description}`);
+let task2Description = prompt("Enter task 2 description");
+console.log(`Description: ${task2Description}`);
 
-const task2Status = prompt("Enter task 2 status");
-console.log(`Status: ${task1Status}`);
+let task2Status = prompt("Enter task 2 status");
 
+//invalid input for Task 2;
+while(task2Status !== "todo" && task2Status !== "doing" && task2Status !== "done") {
+    alert("Invalid status. Please enter 'todo', 'doing', or 'done'.");
+    task2Status = prompt("Enter task 1 status (todo, doing, done)");
+}
+console.log(`Status: ${task2Status}`);
