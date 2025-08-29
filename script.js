@@ -5,12 +5,12 @@ console.log(`Title: ${task1Title}`);
 let task1Description = prompt("Enter task 1 description");
 console.log(`Description: ${task1Description}`);
 
-let task1Status = prompt("Enter task 1 status (todo, doing, done)");
+let task1Status = prompt("Enter task 1 status (todo, doing, done)").toLowerCase();
 
 //invalid input for task 1
 while (task1Status !== "todo" && task1Status !== "doing" && task1Status !== "done") {
     alert("Invalid status. Please enter 'todo', 'doing', or 'done'.");
-    task1Status = prompt("Enter task 1 status (todo, doing, done)");
+    task1Status = prompt("Enter task 1 status (todo, doing, done)").toLowerCase();
 }
 console.log(`Status: ${task1Status}`);
 
@@ -38,12 +38,12 @@ console.log(`Title: ${task2Title}`);
 let task2Description = prompt("Enter task 2 description");
 console.log(`Description: ${task2Description}`);
 
-let task2Status = prompt("Enter task 2 status");
+let task2Status = prompt("Enter task 2 status").toLowerCase();
 
 //invalid input for Task 2;
 while(task2Status !== "todo" && task2Status !== "doing" && task2Status !== "done") {
     alert("Invalid status. Please enter 'todo', 'doing', or 'done'.");
-    task2Status = prompt("Enter task 1 status (todo, doing, done)");
+    task2Status = prompt("Enter task 1 status (todo, doing, done)").toLowerCase();
 }
 console.log(`Status: ${task2Status}`);
 
