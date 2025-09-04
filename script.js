@@ -14,6 +14,20 @@ while (task1Status !== "todo" && task1Status !== "doing" && task1Status !== "don
 }
 console.log(`Status: ${task1Status}`);
 
+switch (task1Status) {
+    case "todo":
+        console.log(`Title: ${task1Title}, status: ${task1Status}`);
+        break;
+    case "doing":
+        console.log(`Title: ${task1Title}, status: ${task1Status}`);
+        break;
+    case "done":
+        console.log(`Title: ${task1Title}, status: ${task1Status}`);
+        break;
+    default: 
+        console.log("no tasks completed, let's get to work!")
+}
+
 //Task 2
 let task2Title = prompt("Enter task 2 title");
 console.log(`Title: ${task2Title}`);
@@ -30,18 +44,17 @@ while(task2Status !== "todo" && task2Status !== "doing" && task2Status !== "done
 }
 console.log(`Status: ${task2Status}`);
 
-// Check if task1 is done, and log it if so
-if (task1Status === "done") {
-  console.log("Title: " + task1Title + ", status: " + task1Status);
-}
-
-// Check if task2 is done, and log it if so
-if (task2Status === "done") {
-  console.log("Title: " + task2Title + ", status: " + task2Status);
-}
-
-// If neither task1 nor task2 is done, show a motivational message
-if (task1Status !== "done" && task2Status !== "done") {
-  console.log("No tasks completed, let's get to work!");
+switch (task2Status) {
+    case "todo":
+        console.log(`Title: ${task2Title}, status: ${task2Status}`);
+        break;
+    case "doing":
+        console.log(`Title: ${task2Title}, status: ${task2Status}`);
+        break;
+    case "done":
+        console.log(`Title: ${task2Title}, status: ${task2Status}`);
+        break;
+    default: 
+        console.log("no tasks completed, let's get to work!")
 }
 
